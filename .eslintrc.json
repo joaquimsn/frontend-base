@@ -1,0 +1,38 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "jquery": true,
+    "es6": true
+  },
+  "extends": "eslint:recommended",
+  "rules": {
+    "indent": [
+      "error",
+      "tab"
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "global-strict": [
+      "error",
+      "always"
+    ]
+  },
+  "overrides": [{
+    "files": ["bin/*.js", "lib/*.js"],
+    "excludedFiles": ["*.test.js", "node_modules"],
+    "rules": {
+      "quotes": [2, "single"]
+    }
+  }]
+}

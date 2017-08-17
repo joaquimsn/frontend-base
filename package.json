@@ -1,0 +1,46 @@
+{
+  "name": "frontend-project-base",
+  "version": "1.0.0",
+  "description": "Estrutura base para frontend usando browser-sync, stylus, pug e gulp",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp run",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaquimsn/frontend-project-base.git"
+  },
+  "keywords": [
+    "gulp-seed",
+    "stylus",
+    "npm"
+  ],
+  "author": "Joaquim Neto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joaquimsn/frontend-project-base/issues"
+  },
+  "homepage": "https://github.com/joaquimsn/frontend-project-base#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "eslint": "^4.4.1",
+    "eslint-config-google": "^0.9.1",
+    "gulp": "^3.9.1",
+    "gulp-changed": "^3.1.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-eslint": "^4.0.0",
+    "gulp-gzip": "^1.4.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-recursive-folder": "^0.9.4",
+    "gulp-stylus": "^2.6.0",
+    "run-sequence": "^2.1.0"
+  },
+  "dependencies": {
+    "pug": "^2.0.0-rc.3"
+  }
+}

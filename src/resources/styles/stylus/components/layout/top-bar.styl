@@ -1,0 +1,89 @@
+.top-bar
+  height 48px
+  background $primaryColor
+  display flex
+  flex-wrap wrap
+  box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+
+  > .actionmenu
+    width 48px
+
+    > .link
+      height 100%
+      display block
+      text-align center
+      position relative
+      top 12px
+
+      > .icon
+        width 27px
+
+  > .hearder
+    height 32px
+    display flex
+    width: calc(100% - 48px);
+    align-content: space-between
+    margin-top 9px
+    > .logo
+      width: 50%
+      margin-right 40px
+      > .link
+        display block
+        > .image
+          width: 90px
+          height: 32px
+
+    > .search
+      margin-top 4px
+      width: 40%;
+      > .input
+        width 100px
+        @media(min-width: em(800px))
+          width 300px
+    
+    > .user
+      width: 50%
+      color $textPrimaryColor
+      display: flex
+      flex-direction: row-reverse
+      > .projeto
+        color: $textPrimaryColor
+        font-family: 'lato regular'
+        font-size: pt(17px)
+        height: 32px
+        line-height: 32px
+        vertical-align: middle
+        margin-right: 20px
+        color #fff
+        display: flex
+
+        > .inputcontainer
+          margin-top: -5px
+          min-width: 100px !important
+          margin-left:  10px
+
+          > .select
+            width: 150px
+
+      > .userdata 
+        text-align: end
+        height: 32px
+        margin-right: 20px
+        line-height: 32px
+        vertical-align: middle
+
+        .icon
+          height: 32px
+          margin-right: 5px
+          line-height: 32px
+          vertical-align: middle
+
+        > .sair 
+          font-size: pt(12px)
+          margin-left: 10px
+          background: none
+          border: none
+
+.marginzero
+  margin 0px
+  color #fff;

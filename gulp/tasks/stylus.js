@@ -1,0 +1,18 @@
+'use strict';
+
+var config       = require('../config');
+var gulp         = require('gulp');
+var stylus       = require('gulp-stylus');
+var minifyCss    = require('gulp-minify-css');
+var gulpif       = require('gulp-if');
+var handleErrors = require('../util/handleErrors');
+var browserSync  = require('browser-sync');
+
+gulp.task('stylus', function () {
+	gulp.src(config.stylus.src)
+		.pipe(stylus())
+		.pipe(minifyCss({keepBreaks: false}))
+		.pipe(gulp.dest(config.stylus.dest))
+		.on('error', handleErrors)
+		.pipe(gulpif(browserSync.active, browserSync.reload({ stream: true })));
+});	
